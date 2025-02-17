@@ -18,9 +18,7 @@ def parse_args_and_config():
     parser = argparse.ArgumentParser(description='Training Wavelet-Based Diffusion Model')
     parser.add_argument("--config", default='LOLv1.yml', type=str,
                         help="Path to the config file")
-        data_dir: "/kaggle/input/lolv2synthetic/LOLv2/"
-    parser.add_argument('--resume', default='/content/drive/My Drive/LOLI/LOLv2/ckpt', type=str,
-                        help='Path for checkpoint to load and resume')
+   
     parser.add_argument('--resume', default='/kaggle/input/lolv2synthetic/LOLv2/ckpt', type=str,
                         help='Path for checkpoint to load and resume')
     parser.add_argument("--sampling_timesteps", type=int, default=10,
