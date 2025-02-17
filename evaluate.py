@@ -18,11 +18,13 @@ def parse_args_and_config():
     parser.add_argument("--config", default='LOLv1.yml', type=str,
                         help="Path to the config file")
     #parser.add_argument('--resume', default='ckpt/model.pth.tar', type=str,
-    parser.add_argument('--resume', default='/kaggle/input/lolv2synthetic/LOLv2/model.pth.tar', type=str,
+    #parser.add_argument('--resume', default='/kaggle/input/lolv2synthetic/LOLv2/model.pth.tar', type=str,
+    parser.add_argument('--resume', default='/kaggle/working/Diff2/ckpt/model.pth.tar', type=str,
                         help='Path for the diffusion model checkpoint to load for evaluation')
     parser.add_argument("--sampling_timesteps", type=int, default=10,
                         help="Number of implicit sampling steps")
-    parser.add_argument("--image_folder", default='results/test', type=str,
+    #parser.add_argument("--image_folder", default='results/test', type=str,
+    parser.add_argument("--image_folder", default='/kaggle/working/Diff2/results/test', type=str,
                         help="Location to save restored images")
     parser.add_argument('--seed', default=230, type=int, metavar='N',
                         help='Seed for initializing training (default: 230)')
