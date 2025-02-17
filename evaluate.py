@@ -66,7 +66,8 @@ def main():
     # data loading
     print("=> using dataset '{}'".format(config.data.val_dataset))
     DATASET = datasets.__dict__[config.data.type](config)
-    _, val_loader = DATASET.get_loaders(parse_patches=False)
+    # Removed parse_patches=False from here
+    _, val_loader = DATASET.get_loaders()  # This no longer takes parse_patches argument
 
     # create model
     print("=> creating denoising-diffusion model")
