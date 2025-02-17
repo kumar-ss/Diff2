@@ -7,7 +7,7 @@ data:
     num_workers: 4
     #data_dir: "/data/Image_restoration/LL_dataset"
     #data_dir: "/content/drive/My Drive/LOLI/LOLv2"
-    data_dir: "/kaggle/input/LOLv2Data/LOL-v2"
+    data_dir: "/kaggle/input/LOLV2Synthetic/LOL-v2"
     ckpt_dir: "ckpt/"
     conditional: True
 
