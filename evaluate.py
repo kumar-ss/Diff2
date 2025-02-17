@@ -17,7 +17,8 @@ def parse_args_and_config():
     parser = argparse.ArgumentParser(description='Evaluate Wavelet-Based Diffusion Model')
     parser.add_argument("--config", default='LOLv1.yml', type=str,
                         help="Path to the config file")
-    parser.add_argument('--resume', default='ckpt/model.pth.tar', type=str,
+    #parser.add_argument('--resume', default='ckpt/model.pth.tar', type=str,
+    parser.add_argument('--resume', default='/content/drive/My Drive/LOLI/LOLv2/ckpt/model.pth.tar', type=str,
                         help='Path for the diffusion model checkpoint to load for evaluation')
     parser.add_argument("--sampling_timesteps", type=int, default=10,
                         help="Number of implicit sampling steps")
